@@ -1,0 +1,11 @@
+<template name='list'>
+   <view style="display:flex;flex-direction:row;margin-top:5px;background-color:#a3b2e4" 
+      bindtap='readDetail' data-id='{{id}}'>
+      <image style="width:40%;height:80px;" src='/images/wx_login.png' style="height: 40px;width: 40px;">
+      </image>
+      <view style="display:flex;flex-direction:column;margin-left:10px">
+         <text>{{title}}</text>
+         <text>{{content}}</text> 
+      </view>
+   </view>
+</template>

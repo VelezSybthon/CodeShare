@@ -1,0 +1,16 @@
+/* pages/invite/invite.wxss */
+.bg-image{ 
+  width : 100%;
+  height : 100%;  
+  position: fixed;  
+  z-index: -1;  
+}
+
+.button{
+	height: 120rpx!important;
+	width: 200rpx !important;
+	color: rgb(12, 31, 117)!important;
+	font-size: 50rpx!important;
+	top: 200rpx!important;
+	border-radius: 200rpx!important;
+}

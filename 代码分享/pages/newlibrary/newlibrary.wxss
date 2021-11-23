@@ -1,0 +1,109 @@
+/* pages/newlibrary/newlibrary.wxss */
+.bg-image{ 
+  width : 100%;
+  height : 100%;  
+  position: fixed;  
+  z-index: -1;  
+}
+.container{
+	height:100px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-evenly;
+  text-align:left;
+}
+.view-contain-ti {
+  top: 200px;
+  display: flex;
+  height: 40px;
+  margin: 20px;
+  border: 3rpx solid #82b2fa;
+  border-radius: 10rpx;
+}
+
+.text-ti {
+  position: absolute;
+  font-size: 12px;
+  background: white;
+  margin: -10px 0 0 10px;
+  padding: 0 5px;
+  color: rgb(144, 147, 167);
+}
+
+.input1 {
+  margin:  auto 10px;
+}
+
+
+/* 下拉框 */
+.select_box {
+  background: rgb(161, 165, 218);
+  width: 620rpx;
+  /* margin: 0 auto; */
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: left;
+	position: relative;
+	top:10px;left:10px
+}
+
+.select {
+  box-sizing: border-box;
+  width: 100%;
+  height: 86rpx;
+  /* border: 1px solid #efefef; */
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+
+.select_text {
+  font-size: 28rpx;
+  flex: 1;
+  color: rgb(19, 8, 8);
+  line-height: 86rpx;
+  height: 86rpx;
+}
+
+.select_img {
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.select_img_rotate {
+  transform: rotate(180deg);
+}
+.option_box {
+  position: absolute;
+  top: 86rpx;
+  width: 100%;
+  /* border: 1px solid #efefef; */
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+  z-index: 100;
+}
+
+.option {
+  display: block;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+  color: rgb(20, 10, 10);
+}
+
+.button{
+	height: 120rpx!important;
+	width: 200rpx !important;
+	color: rgb(12, 31, 117)!important;
+	font-size: 50rpx!important;
+	top: 200rpx!important;
+	border-radius: 200rpx!important;
+}

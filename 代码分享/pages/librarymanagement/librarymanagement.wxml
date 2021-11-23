@@ -1,0 +1,32 @@
+<!--pages/librarymanagement/librarymanagement.wxml-->
+<view>
+<image class="bg-image" mode="scaleToFill" src="/images/background2.png"></image>
+</view>
+
+<view class='container'>
+<view class='title' style='font-family:Times New Roman,Times,serif; font-size:50px; color: rgb(250, 14, 14);'>成员管理</view>
+</view>
+
+
+<view class='offer_wrap'>
+
+<text>{{select_value1.text}}</text>
+<view class='offer_item'>
+  
+  <select prop-array='{{selectList}}' selectText="请选择" stype="1" selectShow="{{select}}" bind:m_select_touch="m_select_touch"></select><image class="Image1" src="/images/user.png"></image>
+</view>
+
+<text>{{select_value2.text}}</text>
+<view class='offer_item'>
+  <select prop-array='{{selectList}}' selectText="请选择" stype="2" selectShow="{{select}}" bind:m_select_touch="m_select_touch"></select>
+  <image class="nameImage2" src="/images/user.png"></image>
+</view>
+
+<text>{{select_value3.text}}</text>
+<view class='offer_item'>
+  <select prop-array='{{selectList}}' selectText="请选择" stype="3" selectShow="{{select}}" bind:m_select_touch="m_select_touch"></select>
+  <image class="nameImage3" src="/images/user.png"></image>
+</view>
+</view>
+
+<button class="bt_connect" hover-class="hover-class-1" bindtap="gotocontact">保存</button>

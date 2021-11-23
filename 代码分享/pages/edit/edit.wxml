@@ -1,0 +1,47 @@
+<!--pages/edit/edit.wxml-->
+<view>
+<image class="bg-image" mode="scaleToFill" src="/images/background2.png"></image>
+</view>
+
+<button class="btn blue" bindtap="modalinput">
+     <text>代码库1</text>
+  </button>
+  <modal hidden="{{hiddenmodalput}}" confirm-text="保存" cancel-text="取消" bindcancel="modalinput" bindconfirm="gotosave">
+    <textarea placeholder="请输入代码"></textarea>
+  </modal>
+
+  <button class="btn blue" bindtap="modalinput">
+     <text>代码库2</text>
+  </button>
+  <modal hidden="{{hiddenmodalput}}" confirm-text="保存" cancel-text="取消" bindcancel="modalinput" bindconfirm="gotosave">
+    <textarea placeholder="请输入代码"></textarea>
+  </modal>
+
+  <button class="btn blue" bindtap="modalinput">
+     <text>代码库3</text>
+  </button>
+  <modal hidden="{{hiddenmodalput}}" confirm-text="保存" cancel-text="取消" bindcancel="modalinput" bindconfirm="gotosave">
+    <textarea placeholder="请输入代码"></textarea>
+  </modal>
+
+  <button class="btn blue" bindtap="modalinput">
+     <text>代码库4</text>
+  </button>
+  <modal hidden="{{hiddenmodalput}}" confirm-text="保存" cancel-text="取消" bindcancel="modalinput" bindconfirm="gotosave">
+    <textarea placeholder="请输入代码"></textarea>
+  </modal>
+
+  <button class="btn blue" bindtap="modalinput">
+     <text>代码库5</text>
+  </button>
+  <modal hidden="{{hiddenmodalput}}" confirm-text="保存" cancel-text="取消" bindcancel="modalinput" bindconfirm="gotosave">
+    <textarea placeholder="请输入代码"></textarea>
+  </modal>
+
+  <button class="btn blue" bindtap="modalinput">
+     <text>+新建库</text>
+  </button>
+  <modal hidden="{{hiddenmodalput}}" confirm-text="保存" cancel-text="取消" bindcancel="modalinput" bindconfirm="gotosave">
+    <textarea placeholder="请输入代码"></textarea>
+  </modal>
+  <button class="bt_connect" hover-class="hover-class-1" bindtap="gotostart">返回</button>

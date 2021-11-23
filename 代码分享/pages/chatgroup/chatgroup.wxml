@@ -1,0 +1,32 @@
+<!--pages/chatgroup/chatgroup.wxml-->
+<view>
+<image class="bg-image" mode="scaleToFill" src="/images/background2.png"></image>
+</view>
+
+
+<view class="bo">
+  <view class="top_bo">
+    <view bindtap="number">群列表(4)</view>
+    <view bindtap="notice">群公告</view>
+    </view>
+    </view>
+    <import src='listItem.wxml'/><!--导入列表项模板-->
+<view>
+   <view wx:for="{{arrays}}">
+      <template is="list" data="{{id:index,path:item.path,title:item.title,content:item.content}}"/>
+   </view>
+</view>
+<view style="width:1rpx;">    
+   	<button  class="okbtn" bindtap='gochat' style="background-color:transparent"></button>    
+  </view>
+
+    <view>
+      <button type="primary" style="height: 100rpx; width: 270rpx; color: rgb(213, 212, 214); font-size: 40rpx; top: 410rpx; margin-left: 230rpx;border-radius: 20%; "bindtap="goHome">返回首页</button>
+    </view>
+
+
+ 
+
+ 
+  
+

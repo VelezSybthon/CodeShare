@@ -1,0 +1,8 @@
+<!--pages/invite/invite.wxml-->
+<view>
+<image class="bg-image" mode="scaleToFill" src="/images/02.png"></image>
+</view>
+
+<view class="btn-area" id="buttonContainer">
+    <button type="primary" style="height: 70rpx; width: 120rpx; color: rgb(218, 216, 217); font-size: 27rpx; top: 10rpx; margin-right: 18rpx;border-radius: 10%; "bindtap="gotolibrarymanagement">确定</button>
+</view>

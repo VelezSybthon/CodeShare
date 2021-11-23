@@ -1,0 +1,25 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/start/start",
+    "pages/newlibrary/newlibrary",
+    "pages/Success/Success",
+    "pages/edit/edit",
+    "pages/librarymanagement/librarymanagement",
+    "pages/invite/invite",
+    "pages/save/save",
+    "pages/permission/permission",
+    "pages/contact/contact",
+    "pages/chatgroup/chatgroup"
+
+  ],
+  "window":{
+    
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "codeshare",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

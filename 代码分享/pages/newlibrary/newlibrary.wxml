@@ -1,0 +1,38 @@
+<!--pages/newlibrary/newlibrary.wxml-->
+<view>
+<image class="bg-image" mode="scaleToFill" src="/images/background2.png"></image>
+</view>
+
+
+<view class='container'>
+<view class='title' style='font-family:Times New Roman,Times,serif;font-size:30px; color: rgb(248, 11, 11);'>创建新库</view>
+</view>
+
+<view class="view-contain-ti" style="margin-top: -50px;">
+    <text class="text-ti"style="margin-top:-30px,opacity:{{0.1}}">库名称</text>
+    <input class="input1"></input>
+</view>
+
+<view class="view-contain-ti">
+    <text class="text-ti"style="margin-top:-25px,opacity:{{1}}">库描述（可选）</text>
+    <input class="input1"style="top:-50px"></input>
+</view>
+
+<view class='fenlei' style="margin-left:20px">
+  <text>  </text>
+  <!-- 下拉框 -->
+    <view class='select_box'>
+      <view class='select' catchtap='selectTaps'>
+        <text class='select_text'>{{selectDatas[indexs]}}</text>
+        <!-- <image class='words_img' src='../../images/sanjiao.png'></image> -->
+        <image class='select_img {{shows&&"select_img_rotate"}}' src='../../images/sanjiao.png'></image>
+      </view>
+      <view class='option_box' style='height:{{shows?(selectDatas.length>5?300:selectDatas.length*60):0}}rpx;'>
+        <text class='option' style='{{indexs==selectDatas.length-1&&"border:0;"}}' wx:for='{{selectDatas}}' wx:key='this' data-index='{{index}}' catchtap='optionTaps'>{{item}}</text>
+      </view>
+    </view>
+</view>
+
+<view class="btn-area" id="buttonContainer">
+    <button type="primary" style="height: 100rpx; width: 270rpx; color: rgb(213, 212, 214); font-size: 40rpx; top: 210rpx; margin-left: 230rpx;border-radius: 20%; "bindtap="gotoSuccess">创建库</button>
+</view>
